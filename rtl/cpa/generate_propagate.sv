@@ -14,27 +14,22 @@
   limitations under the License.
 *******************************************************************************/
 
-/*
-  A basic 1-bit full adder
-              -------
-             | FA    |
-    A    --> |       | --> S
-    B    --> |       |
-    Cin  --> |       | --> Cout
-              -------
-*/
-
-module full_adder
-   (
-    input  logic A,
-    input  logic B,
-    input  logic Cin,
-    output logic Cout,
-    output logic S
+module generate_propagate
+  #(
+    parameter int BIT_LEN      = 17
+    )
+  (
+   input  logic [BIT_LEN-1:0] A,
+   input  logic [BIT_LEN-1:0] B,
+   output logic [BIT_LEN-1:0] g,
+   output logic [BIT_LEN-1:0] p
    );
-
-   always_comb begin
-      S    =  A ^ B ^ Cin;
-      Cout = (A & B) | (Cin & (A ^ B));
-   end
+  
+  always_comb begin
+    g = A & B;
+    p = A ^ B;
+    // Alternatively:
+    //p = A | B;
+  end
 endmodule
+
