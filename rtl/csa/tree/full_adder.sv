@@ -20,7 +20,7 @@ module full_adder
    output logic Cout,
    output logic S
    );
-  
+
   always_comb begin
     S    =  A ^ B ^ Cin;
     Cout = (A & B) | (Cin & (A ^ B));
