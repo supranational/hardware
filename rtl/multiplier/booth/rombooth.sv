@@ -2,8 +2,6 @@
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
 
-`timescale 1ns / 1ps
-
 // 0 1 1 2 -2 -1 -1 0
 
 module rombooth
