@@ -2,7 +2,7 @@
 
 This repository contains open source hardware written in verilog RTL that can be used for FPGA or ASIC based designs. 
 
-Much of this work comes out of the https://www.vdfalliance.org/ studies focused on building a low speed Modular Squaring Unit (MSU) design for use as a verifiable delay function evaluator. Watch for our upcoming blog series on Medium (https://medium.com/@supranational) describing the optimization of these primitives and and the construction of a low latency squaring design.
+Much of this work comes out of the https://www.vdfalliance.org/ studies focused on building a low latency Modular Squaring Unit (MSU) design for use as a verifiable delay function evaluator. Watch for our upcoming blog series on Medium (https://medium.com/@supranational) describing the optimization of these primitives and and the construction of a low latency squaring design.
 
 ## Contents
 
